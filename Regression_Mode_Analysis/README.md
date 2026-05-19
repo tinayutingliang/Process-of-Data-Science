@@ -14,6 +14,9 @@ The relationship between `x` and `y` varies significantly across different `mode
   - Mode 5 → Polynomial Regression (degree 2)
   - Mode 6 → split by category, separate Linear Regression
 
+<img width="800" height="400" alt="mode1-6" src="https://github.com/user-attachments/assets/cd743e01-6ce1-4c87-b54e-446dc8283ba9" />
+
+
 ## Key Results
 | Mode | RMSE |
 |------|------|
