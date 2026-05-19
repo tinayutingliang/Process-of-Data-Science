@@ -17,5 +17,5 @@ Predict daily service requests to optimize staffing under asymmetric cost (under
 - Better tracking of seasonal descent (Nov–Dec)
 
 ## Files
-- `TimeSeriesForecasting_Report.pdf` – detailed analysis and model comparison
-- `TimeSeries_Forecasting.ipynb` – feature engineering, modeling, evaluation
+- `NYC311_Forecasting_Report.pdf` – detailed analysis and model comparison
+- `NYC311_Forecasting.ipynb` – feature engineering, modeling, evaluation
