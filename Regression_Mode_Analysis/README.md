@@ -30,5 +30,6 @@ The relationship between `x` and `y` varies significantly across different `mode
 - Residual analysis shows higher variance in noisier modes (5 & 6).
 
 ## Files
-- `Regression_Report.pdf` – full report with EDA, model selection, residual diagnostics
-- `Regression.py` – complete pipeline: preprocessing → EDA → training → validation → test prediction
+- `Regression_Report.pdf`
+- `Regression.py`
+- `predictions.csv`
