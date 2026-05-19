@@ -12,4 +12,4 @@ Demonstrate how polynomial features affect Ridge regression’s ability to fit n
 Shows that **feature representation** matters as much as model choice, and that low‑degree polynomials cannot capture rapid oscillations.
 
 ## Files
-- `polynomial_features.ipynb` – full code, visualizations, and explanation
+- `polynomial_features.ipynb`
