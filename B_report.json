@@ -1,0 +1,40 @@
+{
+  "validation_split": "Last 56 days held out (time-based split)",
+  "baseline_method": "weekday-mean baseline",
+  "baseline_mae": 44.07,
+  "baseline_business_loss": 3064.0,
+  "model_type": "HistGradientBoostingRegressor + lag features + cyclical encoding",
+  "model_mae": 20.05,
+  "model_business_loss": 1573.0,
+  "features_used": [
+    "trend",
+    "month_sin/cos",
+    "woy_sin/cos",
+    "dow_sin/cos",
+    "is_holiday",
+    "is_school_break",
+    "is_weekend",
+    "promo_flag",
+    "holiday_weekday",
+    "school_weekday",
+    "lag7",
+    "lag14",
+    "roll7",
+    "roll14",
+    "roll28",
+    "trend7vs14",
+    "level_ratio",
+    "same_dow_ewm"
+  ],
+  "dow_encoding_note": "Cyclical sin/cos encoding preserves Mon~Sun adjacency.",
+  "lag_note": "same_dow_ewm = 0.5*lag7+0.3*lag14+0.15*lag21+0.05*lag28. trend7vs14 = roll7-roll14 captures demand momentum. Recursive forecasting for horizon days whose lag-7 is not in training history.",
+  "bias_correction": "x0.96 multiplier compensates systematic over-prediction in low-demand months.",
+  "insights": [
+    "Lag-7 autocorrelation = 0.76: same-weekday last week is the strongest single predictor.",
+    "same_dow_ewm is more stable than lag-7 alone; critical for the week after an anomalous day.",
+    "trend7vs14 captures seasonal descent (Nov->Dec->Jan) faster than the model alone.",
+    "holiday_weekday interaction: weekday holidays cut demand ~30%, weekend holidays ~10%.",
+    "Asymmetric 2:1 loss means a slight downward bias is preferable to over-predicting."
+  ],
+  "limitation": "Bias correction estimated from a single val window; could be cross-validated."
+}
