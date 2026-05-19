@@ -12,4 +12,4 @@ Predict whether a patient is sick (5% prevalence). Accuracy is misleading; recal
 For medical screening, **recall > precision** because missing a sick patient is far worse than a false alarm.
 
 ## Files
-- `imbalanced_classification.ipynb` – code + interactive threshold experiments
+- `imbalanced_classification.ipynb`
