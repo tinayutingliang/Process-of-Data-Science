@@ -9,7 +9,7 @@
 
 | Project | Topic | Key Techniques |
 |--------|-------|----------------|
-| [1](./Regression_Mode_Analysis) | Mode‑Wise Regression | Linear / Polynomial Regression, KMeans, RMSE, Residual Analysis |
+| [1](./Regression_Mode_Analysis) | Regression Mode Analysis | Linear / Polynomial Regression, KMeans, RMSE, Residual Analysis |
 | [2](./TimeSeries_Forecasting) | Time Series + Business Loss | Ridge, HistGradientBoosting, lag features |
 | [3](./Synthetic_Data_Ridge) | Ridge & Polynomial Features | synthetic data, bias‑variance, sin(10x) |
 | [4](./Classification_Imbalanced) | Imbalanced Classification | precision, recall, threshold tuning |
